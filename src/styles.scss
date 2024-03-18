@@ -1,1 +1,112 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary-color: #5E88F3;
+$rev-orange: #FAA307;
+$div-blue: #F4F7FE;
+$text: #222;
+$rev-text: #7D97F4;
+$alt-text: #fff;
+
+
+@font-face {
+    font-family: 'Days One';
+    src: url('../src/assets/fonts/Days_One/DaysOne-Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Days One';
+    src: url('../src/assets/fonts/Days_One/DaysOne-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('../src/assets/fonts/GTWalsheimPro-Regular/GTWalsheimPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+$GT-Walsheim-Pro: 'GT Walsheim Pro', sans-serif;
+$days-one-font: 'Days One', sans-serif;
+
+  body {
+    margin: 0;
+    font-family: $GT-Walsheim-Pro;
+    color: $text;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-flex;
+  }
+
+  hr {
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+    span {
+        color: $rev-text;
+        font-weight: 700;
+    }
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px 20px;
+    // width: 100%;
+    .logo {
+        font-family: $days-one-font;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $rev-text;
+        text-transform: uppercase;
+      }
+
+      ul {
+        gap: 20px;
+      }
+
+    
+}
+
+.achievements {
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: $primary-color;
+    color: $alt-text;
+    padding: 82px 87px;
+    .logo {
+      font-family: $days-one-font;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: $alt-text;
+    }
+
+    .social-links {
+        display: flex;
+
+    }
+    .rev-copy {
+        text-align: center;
+    }
+}
+  
