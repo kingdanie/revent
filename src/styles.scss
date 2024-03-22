@@ -125,7 +125,6 @@ padding: 4px 25px;
   }
 
   h2 {
-    font-size: 50px;
     font-weight: 700;
     line-height: 57px;
     letter-spacing: 0em;
@@ -201,7 +200,6 @@ nav {
     background-position: right;
 
     h2 {
-      font-size: 50px;
       font-weight: 500;
       line-height: 57.25px;
       text-align: left;
@@ -264,9 +262,12 @@ nav {
 
 .why-us {
 
+  display: flex;
+  flex-direction: column-reverse;
+
   background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, rgba(125, 151, 244, 0.08) 100%);
     @include rev-padding;
-    @include rev-flex;
+    // @include rev-flex;
     gap: 30px;
 
 
@@ -278,13 +279,16 @@ nav {
 
 
   h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 45.8px;
   text-align: left;
   }
 
   @media screen and (min-width: 1024px) { 
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
     .grid-container {
       display: grid;
       // grid-template-columns: repeat(auto-fill, minmax(0, 278px));
@@ -378,11 +382,9 @@ nav {
     
         h2 {
           margin-bottom: 10px;
-          font-size: 40px;
+          font-size: 2.5rem;
           font-weight: 700;
           line-height: 52px;
-  
-
         }
     
         p {
@@ -522,7 +524,7 @@ min-width: 30%;
         text-align: center;
         max-width: 50%;
         margin: auto;
-        font-size: 52px;
+        font-size: 3.20rem;
         font-weight: 700;
     }
 
@@ -531,8 +533,6 @@ min-width: 30%;
       
       h2 {
         max-width: 100%;
-        font-size: 32px;
-
       }
 
     }
