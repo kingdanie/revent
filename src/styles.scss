@@ -197,13 +197,28 @@ nav {
     background-image: url('assets/images/Vector.svg'); 
     background-repeat: no-repeat; 
     background-size: contain; 
-    background-position: right;
+    background-position: bottom;
+
+    .intro-img {
+      margin-top: 70px
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-position: right;
+
+
+    .intro-img {
+      margin-top: 0px
+    }
+    }
 
     h2 {
       font-weight: 500;
       line-height: 57.25px;
       text-align: left;
     }
+
+
 }
 
 .loan {
@@ -229,6 +244,7 @@ nav {
 
     .apply {
         @include rev-flex;
+        gap: 80px;
 
         .points {
 
@@ -295,6 +311,12 @@ nav {
       // grid-template-columns: auto auto; // 2 columns of equal width
       grid-template-columns: repeat(2, 278px); // Fixed width for each column
       grid-gap: 24px; // Gap between grid items 
+
+      div {
+        &:nth-child(even) {
+         margin: auto auto 20px auto;
+       }
+      }
       }
       
   }
@@ -305,9 +327,8 @@ nav {
             background-color: #fff;
             padding: 10px;
             border-radius: 8px;
-          &:nth-child(even) {
-            margin-top: 30px;
-          }
+            margin: 40px auto;
+     
 
           p{
             font-size: 16px;
@@ -354,10 +375,11 @@ nav {
 .why-revent, .loans, .our-offer {
     @include rev-flex;
     @include rev-padding;
+    gap: 80px;
     
 
     div {
-      text-align: center;
+      text-align: left;
   
       h2 {
         margin-bottom: 10px;
@@ -446,6 +468,7 @@ nav {
 }
 
 .our-offer {
+  
 
   .offer-points div {
     display: flex;
@@ -457,6 +480,12 @@ nav {
     margin-right: 5px;
     // padding: 15px;
     // background-color: red;
+  }
+
+  .pills {
+    background-color: #EFFAFE;
+    ;
+    color: #5ECCF3;
   }
 
   @media screen and (min-width: 1024px) { 
