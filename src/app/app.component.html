@@ -1,34 +1,82 @@
 <main class="main">
-  <nav>
-    <div class="logo">Logo</div>
-    <ul>
-      <li>Home</li>
-      <li>Contact Us</li>
-      <li>About Us</li>
-      <li>Let's Talk 👋🏾</li>
-    </ul>
-  </nav>
+
   
   <div class="content">
 
-    <section>
+    <app-header></app-header>
+
+    <section class="intro">
       <div>
         <h2>We are creating wealth for our <span class="alt-text">society</span></h2>
+        <p>
+          Revent is dedicated to enabling financial freedom by providing quick access to 
+          loans in order to provide convenience for its customers.
+        </p>
+        <app-button buttonText="Lets Talk 👋🏾" color="primary"></app-button>
       </div>
-      <div></div>
+      <div>
+        <img src="assets/images/Frame.svg" alt />
+      </div>
     </section>
 
-    <section>
+    <section class="loan">
       <h2>Are you looking for a quick loan? Get your loan in <span>24 hours ⏳</span></h2>
-      <div>
-        <div></div>
-        <div></div>
+      <div class="apply">
+        <div class="points">
+          <div>
+            <h4>Apply</h4>
+            <p>
+              Take your first step to financial freedom by applying for a loan from us 
+              and we will be available to help you every step of the way.
+            </p>
+          </div>
+          <div>
+            <h4>Get verified</h4>
+            <p>
+              We follow a well-regulated process to evaluate you/your documents 
+              we verify you and move you to the next step
+            </p>
+          </div>
+          <div>
+            <h4>Get funded</h4>
+            <p>
+              After evaluation you will get your loan, all of this will occur within 24 hours. 
+              Our loans are quick and easy. It’s that simple
+            </p>
+          </div>
+        </div>
+        <div class="doc"><img src="assets/images/Documents.svg" /></div>
       </div>
     </section>
 
     <section class="why-us">
-      <div></div>
+      <div class="grid-container">
+        <div>
+          <img src="" />
+          <h5>Quick & Instant</h5>
+          <p>
+            We provide you with a faster approach to applying for a loan. 
+            As mentioned earlier, you will get your loan within 24 hours.
+          </p>
+        </div>
+        <div>
+          <img src="" />
+          <h5>Competitive interest rates</h5>
+          <p>Our interest rates are hard to beat. With us you get more for less.</p>
+        </div>
+        <div>
+          <img src="" />
+          <h5>Technology driven</h5>
+          <p>We have enhanced the loan application process by utilizing technology to bring you convenience and speed </p>
+        </div>
+        <div>
+          <img src="" />
+          <h5>Convinient & flexible</h5>
+          <p>With us you get access to the funds you need through our hassle-free and efficient processes</p>
+        </div>
+      </div>
       <div>
+        <span class="pills">We guarantee</span>
         <h2>Easy Financial services <span>wherever you go</span></h2>
         <p>
           Whether you’re at home, at the office, or on the go, you can apply for your loan from anywhere. 
@@ -38,23 +86,23 @@
     </section>
 
     <section class="achievements">
-      <div>
-        <h5>40+</h5>
+      <div class="item">
+        <h2>40+</h2>
         <p>staff in different regions</p>
       </div>
-      <div>
-        <h5>40M+</h5>
+      <div class="item">
+        <h2>40M+</h2>
         <p>total amount loan disbursed</p>
       </div>
-      <div>
-        <h5>360+</h5>
+      <div class="item">
+        <h2>360+</h2>
         <p>Approved & disbursed loan applications</p>
       </div>
     </section>
 
     <section class="why-revent">
       <div>
-        <div>Why Revent</div>
+        <span class="pills">Why Revent</span>
         <h2>We are a micro-finance body that <span>cares</span></h2>
         <p>
           We support micro businesses and enterprises within the fast-moving consumer goods (FMCG) 
@@ -63,14 +111,16 @@
         </p>
       </div>
       <div>
-
+        <img src="assets/images/Career-progress.svg" alt="" />
       </div>
     </section>
 
     <section class="loans">
-      <div></div>
       <div>
-        <div>What we offer</div>
+        <img src="assets/images/Wallet.svg" alt="" />
+      </div>
+      <div>
+        <span class="pills">What we offer</span>
         <h2>Have access to loans anytime anywhere</h2>
         <p>
           We also provide working capital support the micro businesses within the FMCG value chain 
@@ -80,69 +130,106 @@
       </div>
     </section>
 
-    <section>
+    <section class="our-offer">
       <div>
-        <div>What we offer</div>
+        <span class="pills">What we offer</span>
         <h2>Financial Advisory, consultation and Lending services</h2>
         <p>
           We provide business advisory that is backed with funding to increase turnover and in 
           turn profits while alleviating poverty especially among-st women and communities that 
           are under banked or unbanked. 
         </p>
-        <div>
+        <div class="offer-points">
           <div>MMoney Lending</div>
           <div>Micro-finance</div>
           <div>Advisory</div>
         </div>
       </div>
       <div>
+        <img src="assets/images/Consulting.svg" alt="" />
 
       </div>
     </section>
 
     <section class="stories">
-      <div></div>
-      <div>
-        images
-        images
-        images
-        images
+      <div class="story-one">
+        <div>
+          <h2>Stories from users</h2>
+          <p>
+            I used to struggle with my business due to 
+            low capital until i met Revent that took my business to a new level with the 
+            loan granted to me at the best rates ever
+          </p>
+          <p>- Magarette Chikamso</p>
+        </div>
+        <div>
+          <img src="assets/images/stories.svg" alt="" />
+        </div>
+      </div>
+      <div class="clients">
+        <img src="assets/images/bamboo.svg" alt="" />
+        <img src="assets/images/multilingua.svg" alt="" />
+        <img src="assets/images/il.svg" alt="" />
+        <img src="assets/images/artisan.svg" alt="" />
+        <img src="assets/images/branch.svg" alt="" />
       </div>
     </section>
 
-    <section class="news">
-      <h2>Latest news</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Commodo sodales elit quam nisl, amet. 
-      </p>
-      <div></div>
+    <section class="info">
+
+      <div class="news">
+        <h2>Latest news</h2>
+        <p class="news-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Commodo sodales elit quam nisl, amet. 
+        </p>
+        <div class="articles">
+          @for (news of [0, 1, 2]; track news) {
+            <div>
+              <div> <img src="assets/images/Rectangle.png" alt="" /></div>
+              <h6>
+                A digital prescription for the pharma industry
+              </h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sodales elit......</p>
+  
+            </div>
+          }
+        </div>
+
+      </div>
+  
+      <div class="newsletter">
+        <form action="">
+        <h2>Subscribe to our <span>Newsletter</span></h2>
+          <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+          </div>
+          <div>
+            <app-button buttonText="Subscribe 📩" color="primary"></app-button>
+          </div>
+        </form>
+      </div>
+  
+      <div class="contact-us">
+        <h2>We are here to help you navigate the poor financial service provision in Africa</h2>
+        <app-button buttonText="Lets Talk 👋🏾" buttonColor="alt"></app-button>
+      </div>
+
     </section>
 
-    <section class="newsletter">
-      <h2>Subscribe to our <span>Newsletter</span></h2>
-      <form action="">
-        <input type="email" name="email" id="email" placeholder="Enter your email address">
-        <button>Subscribe 📩</button>
-      </form>
-    </section>
 
-    <section>
-      <h2>We are here to help you navigate the poor financial service provision in Africa</h2>
-      <button>
-        Lets Talk 👋🏾
-      </button>
-    </section>
 
 
   </div>
 
   <footer>
-    <div style="display: flex; justify-content: space-between;">
+    <div class="links">
       <div class="logo">LOGO</div>
       <div>
-        <ul>
-          <li>Contact Us</li>
+        <ul class="footer-links">
+          @for (Links of footerLinks; track Links) {
+            <li>{{ Links }}</li>
+          }
         </ul>
       </div>
       <div class="social-links">
@@ -151,18 +238,9 @@
       </div>
     </div>
     <hr />
-    <div class="rev-copy">Copyright reventtechnologies. All rights reserved</div>
+    <div class="rev-copy" style="padding-top: 40px;">© 2021 reventtechnologies. All rights reserved.</div>
 
   </footer>
 </main>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet />
