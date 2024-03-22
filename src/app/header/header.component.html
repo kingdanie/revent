@@ -1,0 +1,14 @@
+<nav>
+    <div class="logo">Logo</div>
+    <ul class="nav-links" [class.active]="showNavLinks">
+      <li>Home</li>
+      <li>Contact Us</li>
+      <li>About Us</li>
+      <li>Let's Talk 👋🏾</li>
+    </ul>
+    <div class="nav-icon" (click)="toggleNavLinks()">
+      <span [ngClass]="{'close-icon': showNavLinks}"></span>
+      <span [ngClass]="{'close-icon': showNavLinks}"></span>
+      <span [ngClass]="{'close-icon': showNavLinks}"></span>
+    </div>
+  </nav>
