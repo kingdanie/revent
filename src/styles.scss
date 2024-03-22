@@ -445,17 +445,33 @@ nav {
         align-items: center;
         gap: 74px;
         padding: 106px 0px;
+
+        p {
+          color: $alt-text;
+        }
     }
+
+    .arthor {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 29.23px;
+      text-align: left;
+
+    }
+
 
     .clients {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 70px;
+        gap: 50px;
     }
 
     @media screen and (max-width: 769px) {
       
-      .story-one, .clients {
+      .story-one {
         flex-direction: column; 
         gap: 15px;
       }
